@@ -1,0 +1,41 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-color: #F2EBF9;
+    width: 280px;
+    height: 100vh;
+    padding: 24px;
+
+}
+
+.link_group{
+    display: flex;
+    flex-direction: column;
+    width: 232px;
+    height: 100px;
+    gap: 10px;
+}
+
+.link{
+    text-decoration: none;
+    padding: 10px;
+    /* background-color: #E5D5FA; */
+    border-radius: 8px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.link:hover,
+.link:active {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #E5D5FA;
+    border-radius: 8px;
+    color: #9854F6;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;  
+}

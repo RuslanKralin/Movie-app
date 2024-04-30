@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import '@mantine/core/styles.css'
 import './globals.css'
 import { theme } from '@../../../theme'
+import NavBar from '@/components/NavBar'
+import styles from './styles.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +29,8 @@ export default function RootLayout({
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body>
+      <body className={styles.wrapper}>
+        <NavBar />
         <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>
