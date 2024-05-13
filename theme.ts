@@ -1,6 +1,7 @@
 "use client";
 
-import { createTheme } from "@mantine/core";
+
+import { TextInput, createTheme, rem } from "@mantine/core";
 
 export const theme = createTheme({
   colors: {
@@ -16,7 +17,24 @@ export const theme = createTheme({
       "#5a21a8",
       "#4d1b95"
     ]
-  }
+  },
+  fontSizes: {
+    xs: rem(10),
+    sm: rem(11),
+    md: rem(14),
+    lg: rem(16),
+    xl: rem(20),
+  },
+  components: {
+    TextInput: TextInput.extend({
+      defaultProps: {
+        radius: '30px',
+    
+        // variant: 'outline',
+        // disabled: true
+      },
+    }),
+  },
 });
 
 
